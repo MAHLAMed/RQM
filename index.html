@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        * {
+            font-size: 40px;
+        }
+        body {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background-color: pink;
+        }
+    </style>
+    <script>
+     window.onload = first
+    function first() {
+     document.getElementById("text").innerText = "First Quote";
+     document.getElementById("author").innerText = "Alfred";
+    }
+    function generatequote(){
+        document.getElementById("text").innerText = "Changed";
+        document.getElementById("author").innerText = "CHANGED change";
+
+    }
+    </script>
+</head>
+<body>
+   <h1>Random-Quote-Machine</h1> 
+   <br>
+   <wrapper id="quote-box">
+    <div id="text"></div>
+    <div id="author"></div> 
+    <button onclick="generatequote()" id="new-quote">New Quote</button>
+    <a href="twitter.com/intent/tweet" target="_blank" id="tweet-quote">Tweet Quote</a>
+   </wrapper>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
